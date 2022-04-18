@@ -13,7 +13,6 @@ public abstract class Auto {
 	private String marca;
 	private String modelo;
 	private String color;
-	private String nombreRadio;
 	private double precio;
 	private Radio radio;
 
@@ -37,7 +36,6 @@ public abstract class Auto {
 		this.marca = marca;
 		this.modelo = modelo;
 		this.color = color;
-		this.nombreRadio = nombreRadio;
 		this.radio = new Radio(nombreRadio);
 	}
 
@@ -46,7 +44,6 @@ public abstract class Auto {
 		this.marca = marca;
 		this.modelo = modelo;
 		this.color = color;
-		this.nombreRadio = nombreRadio;
 		this.radio = new Radio(nombreRadio);
 		this.precio = precio;
 	}
@@ -64,8 +61,7 @@ public abstract class Auto {
 	 */
 	@Override
 	public String toString() {
-		return "Auto [color=" + color + ", marca=" + marca + ", modelo=" + modelo + ", nombreRadio=" + nombreRadio
-				+ ", precio=" + precio + ", radio=" + radio + "]";
+		return "Auto [color=" + color + ", marca=" + marca + ", modelo=" + modelo + ", precio=" + precio + ", radio=" + radio + "]";
 	}
 
 	public String getMarca() {

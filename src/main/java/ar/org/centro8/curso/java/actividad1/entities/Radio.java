@@ -19,6 +19,6 @@ public class Radio {
 	 */
 	@Override
 	public String toString() {
-		return "Radio [nombre=" + nombre + "]";
+		return nombre;
 	}
 }
